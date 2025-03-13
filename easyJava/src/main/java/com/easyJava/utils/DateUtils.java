@@ -1,0 +1,18 @@
+package com.easyJava.utils;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class DateUtils {
+    public static final String YYYY_MM_DD="yyyy-MM-dd";
+    public static final String _YYYYMMDD="yyyy/MM/dd";
+    public static final String YYYYMMDD="yyyyMMdd";
+    public static String format(Date date,String pattern){
+        return new SimpleDateFormat(pattern).format(date);
+    }
+    public static String parse(String date,String pattern) throws ParseException {
+        new SimpleDateFormat(pattern).parse(date);
+        return null;
+    }
+}

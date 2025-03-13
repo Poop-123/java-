@@ -3,7 +3,6 @@ package com.easyJava.builder;
 import com.easyJava.bean.Constants;
 import com.easyJava.bean.FieldInfo;
 import com.easyJava.bean.TableInfo;
-import com.easyJava.utils.JsonUtils;
 import com.easyJava.utils.PropertiesUtils;
 import com.easyJava.utils.StringUtils;
 import org.apache.commons.lang3.ArrayUtils;
@@ -11,6 +10,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -56,10 +56,8 @@ public class BuilderTable {
 
                 readFieldInfo(tableInfo);
                 getKeyIndexInfo(tableInfo);
-                //logger.info("tableInfo:{}", JsonUtils.convertObj2Json(tableInfo));
                 tableInfoList.add(tableInfo);
                 }
-            //logger.info("taleInfoList:{}",tableInfoList);
         }
         catch (Exception e){
             e.printStackTrace();
@@ -92,7 +90,6 @@ public class BuilderTable {
 
     return tableInfoList;
     }
-
     private static void readFieldInfo(TableInfo tableInfo) {
         PreparedStatement ps = null;
         ResultSet fieldResult = null;
@@ -119,13 +116,20 @@ public class BuilderTable {
                 fieldInfo.setSqlType(type);
                 fieldInfo.setPropertyName(propertyName);
                 fieldInfo.setJavaType(processJavaType(type));
-                tableInfo.setHaveDateTime(ArrayUtils.contains(Constants.SQL_DATE_TIME_TYPES,type));
-                tableInfo.setHaveDate(ArrayUtils.contains(Constants.SQL_DATE_TYPES,type));
-                tableInfo.setHaveBigDecimal(ArrayUtils.contains(Constants.SQL_DECIMAL_TYPE,type));
+                if(ArrayUtils.contains(Constants.SQL_DATE_TIME_TYPES,type)){
+                    tableInfo.setHaveDateTime(true);
+                }
+                if(ArrayUtils.contains(Constants.SQL_DATE_TYPES,type)){
+                    tableInfo.setHaveDate(true);
+                }
+                if(ArrayUtils.contains(Constants.SQL_DECIMAL_TYPE,type)){
+                    tableInfo.setHaveBigDecimal(true);
+                }
+
 
             }
         } catch (Exception e) {
-            e.printStackTrace();
+
             logger.error("读取字段失败");
         }
         finally {
@@ -148,6 +152,10 @@ public class BuilderTable {
         ResultSet fieldResult = null;
 
         try {
+            Map<String,FieldInfo> tempMap=new HashMap<>();
+            for(FieldInfo fieldInfo:tableInfo.getFieldList()){
+                tempMap.put(fieldInfo.getFieldName(),fieldInfo);
+            }
             ps = conn.prepareStatement(String.format(SQL_SHOW_TABLE_INDEX,tableInfo.getTableName()));
             fieldResult = ps.executeQuery();
             while (fieldResult.next()) {
@@ -163,11 +171,12 @@ public class BuilderTable {
                     keyFieldList=new ArrayList<>();
                     tableInfo.getKeyIndexMap().put(keyName,keyFieldList);
                 }
-                for(FieldInfo  fieldInfo: tableInfo.getFieldList()){
-                    if(fieldInfo.getFieldName().equals(columnName)){
-                        keyFieldList.add(fieldInfo);
-                    }
-                }
+//                for(FieldInfo  fieldInfo: tableInfo.getFieldList()){
+//                    if(fieldInfo.getFieldName().equals(columnName)){
+//                        keyFieldList.add(fieldInfo);
+//                    }
+//                }
+                keyFieldList.add(tempMap.get(columnName));
               }
         } catch (Exception e) {
 
@@ -207,7 +216,7 @@ public class BuilderTable {
             return "String";
         }
         else if(ArrayUtils.contains(Constants.SQL_DATE_TIME_TYPES,type)){
-            return "DateTime";
+            return "Date";
         }
         else if(ArrayUtils.contains(Constants.SQL_DATE_TYPES,type)){
             return "Date";

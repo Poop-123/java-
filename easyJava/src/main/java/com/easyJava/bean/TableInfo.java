@@ -92,8 +92,8 @@ public class TableInfo {
     //索引
     private Map<String,List<FieldInfo>> keyIndexMap=new LinkedHashMap<>();
     //是否有日期类型
-    private Boolean haveDate;
-    private Boolean haveDateTime;
+    private Boolean haveDate=false;
+    private Boolean haveDateTime=false;
     //是否有bigDecimal类型
-    private Boolean haveBigDecimal;
+    private Boolean haveBigDecimal=false;
 }

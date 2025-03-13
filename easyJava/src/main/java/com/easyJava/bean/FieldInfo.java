@@ -60,6 +60,6 @@ public class FieldInfo {
     }
 
     //字段是否自增长
-    private boolean isAutoIncrement;
+    private boolean isAutoIncrement=false;
 
 }
