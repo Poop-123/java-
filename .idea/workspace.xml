@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2675108-2419-48b0-b247-6db8684e412b" name="Changes" comment="" />
+    <list default="true" id="e2675108-2419-48b0-b247-6db8684e412b" name="Changes" comment="代码生成工具--数据库表的获取">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easyJava/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easyJava/src/main/java/com/easyJava/bean/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/src/main/java/com/easyJava/bean/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easyJava/src/main/java/com/easyJava/builder/BuilderTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/src/main/java/com/easyJava/builder/BuilderTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easyJava/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/src/main/resources/application.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +27,21 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Poop-123&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:Poop-123/java-.git&quot;,
+    &quot;accountId&quot;: &quot;63c2b946-192e-460c-9598-f2a8c2cfc881&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/easyJava/src/main/resources/application.properties" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -70,10 +93,10 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "E:/easyjava/easyJava-demo/src/main/java/com/lgh/Main.java",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Problems",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.21494253",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "settings.editor.selected.configurable": "File.Encoding",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -170,11 +193,26 @@
       <workItem from="1741761169588" duration="5766000" />
       <workItem from="1741767777379" duration="1792000" />
       <workItem from="1741770343360" duration="3317000" />
-      <workItem from="1741780620840" duration="8747000" />
+      <workItem from="1741780620840" duration="10159000" />
+      <workItem from="1741827045309" duration="1989000" />
+      <workItem from="1741829158389" duration="5049000" />
     </task>
+    <task id="LOCAL-00001" summary="代码生成工具--数据库表的获取">
+      <option name="closed" value="true" />
+      <created>1741793027492</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1741793027492</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="代码生成工具--数据库表的获取" />
+    <option name="LAST_COMMIT_MESSAGE" value="代码生成工具--数据库表的获取" />
   </component>
 </project>

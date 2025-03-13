@@ -15,6 +15,6 @@ public class Constants {
     public final static String[] SQL_DATE_TYPES=new String[]{"date"};
     public final static String[] SQL_DECIMAL_TYPE=new String[]{"decimal","double","float"};
     public final static String[] SQL_STRING_TYPE=new String[]{"char","varchar","text","mediumtext","longtext"};
-    public final static String[] SQL_INTEGER_TYPE=new String[]{"int","tinyint"};
+    public final static String[] SQL_INTEGER_TYPE=new String[]{"int","tinyint","int unsigned","tinyint unsigned"};
     public final static String[] SQL_LONG_TYPE=new String[]{"bigint"};
 }
