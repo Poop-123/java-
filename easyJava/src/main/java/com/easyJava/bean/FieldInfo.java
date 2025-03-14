@@ -47,7 +47,7 @@ public class FieldInfo {
         return comment;
     }
 
-    public void setComment(String commit) {
+    public void setComment(String comment) {
         this.comment = comment;
     }
 

@@ -4,24 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2675108-2419-48b0-b247-6db8684e412b" name="Changes" comment="代码生成工具--表索引的获取  取表操作完结">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+    <list default="true" id="e2675108-2419-48b0-b247-6db8684e412b" name="Changes" comment="代码生成工具--po对象生成">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/easyJava-demo/src/main/java/com/easyJava/RunDemoApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/easyJava-demo/src/main/java/com/easyJava/entity/po/Dept.java" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava-demo/src/main/java/com/easyJava/entity/po/Dept.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easyJava-demo/src/main/java/com/easyJava/entity/po/Emp.java" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava-demo/src/main/java/com/easyJava/entity/po/Emp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easyJava-demo/target/classes/com/lgh/RunDemoApplication.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/easyJava/src/main/java/com/easyJava/RunApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/src/main/java/com/easyJava/RunApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/easyJava/src/main/java/com/easyJava/bean/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/src/main/java/com/easyJava/bean/Constants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/easyJava/src/main/java/com/easyJava/bean/FieldInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/src/main/java/com/easyJava/bean/FieldInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/easyJava/src/main/java/com/easyJava/bean/TableInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/src/main/java/com/easyJava/bean/TableInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easyJava/src/main/java/com/easyJava/builder/BuildPo.java" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/src/main/java/com/easyJava/builder/BuildPo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/easyJava/src/main/java/com/easyJava/builder/BuilderTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/src/main/java/com/easyJava/builder/BuilderTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/easyJava/src/main/java/com/easyJava/utils/PropertiesUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/src/main/java/com/easyJava/utils/PropertiesUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easyJava/src/main/java/com/easyJava/utils/DateUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/src/main/java/com/easyJava/utils/DateUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/easyJava/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/easyJava/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/easyJava/target/classes/com/easyJava/RunApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/target/classes/com/easyJava/RunApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/easyJava/target/classes/com/easyJava/bean/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/target/classes/com/easyJava/bean/Constants.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/easyJava/target/classes/com/easyJava/bean/FieldInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/target/classes/com/easyJava/bean/FieldInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/easyJava/target/classes/com/easyJava/bean/TableInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/target/classes/com/easyJava/bean/TableInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easyJava/target/classes/com/easyJava/builder/BuildPo.class" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/target/classes/com/easyJava/builder/BuildPo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/easyJava/target/classes/com/easyJava/builder/BuilderTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/target/classes/com/easyJava/builder/BuilderTable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easyJava/target/classes/com/easyJava/utils/DateUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/target/classes/com/easyJava/utils/DateUtils.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +84,9 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Application.BuilderTable.executor&quot;: &quot;Run&quot;,
     &quot;Application.Constants.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Dept.executor&quot;: &quot;Debug&quot;,
     &quot;Application.Main.executor&quot;: &quot;Run&quot;,
     &quot;Application.PropertiesUtils.executor&quot;: &quot;Run&quot;,
     &quot;Application.RunApplication.executor&quot;: &quot;Run&quot;,
@@ -123,6 +126,19 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.RunApplication">
+    <configuration name="BuilderTable" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.easyJava.builder.BuilderTable" />
+      <module name="easyJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.easyJava.builder.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Constants" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.easyJava.bean.Constants" />
       <module name="easyJava" />
@@ -136,12 +152,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PropertiesUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.easyJava.utils.PropertiesUtils" />
-      <module name="easyJava" />
+    <configuration name="Dept" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.easyJava.entity.po.Dept" />
+      <module name="easyJava-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.easyJava.utils.*" />
+          <option name="PATTERN" value="com.easyJava.entity.po.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -175,26 +191,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RunDemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="easyJava-demo" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.easyJava.RunDemoApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.easyJava.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.RunApplication" />
+        <item itemvalue="Application.Dept" />
+        <item itemvalue="Application.BuilderTable" />
         <item itemvalue="Application.Constants" />
         <item itemvalue="Application.StringUtils" />
-        <item itemvalue="Application.PropertiesUtils" />
-        <item itemvalue="Spring Boot.RunDemoApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -224,6 +227,9 @@
       <workItem from="1741829158389" duration="7229000" />
       <workItem from="1741841311782" duration="15502000" />
       <workItem from="1741878498731" duration="1770000" />
+      <workItem from="1741880651666" duration="56000" />
+      <workItem from="1741916728468" duration="17732000" />
+      <workItem from="1741951370644" duration="5337000" />
     </task>
     <task id="LOCAL-00001" summary="代码生成工具--数据库表的获取">
       <option name="closed" value="true" />
@@ -241,7 +247,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741836078264</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="代码生成工具--po对象生成">
+      <option name="closed" value="true" />
+      <created>1741880695929</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1741880695929</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,6 +264,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="代码生成工具--数据库表的获取" />
     <MESSAGE value="代码生成工具--表索引的获取  取表操作完结" />
-    <option name="LAST_COMMIT_MESSAGE" value="代码生成工具--表索引的获取  取表操作完结" />
+    <MESSAGE value="代码生成工具--po对象生成" />
+    <option name="LAST_COMMIT_MESSAGE" value="代码生成工具--po对象生成" />
   </component>
 </project>

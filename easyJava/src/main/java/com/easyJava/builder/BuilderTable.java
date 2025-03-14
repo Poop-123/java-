@@ -103,7 +103,6 @@ public class BuilderTable {
                 String type = fieldResult.getString("Type");
                 String extra=fieldResult.getString("Extra");
                 String comment=fieldResult.getString("Comment");
-
                 if(type.indexOf("(")>0){
                     type=type.substring(0,type.indexOf("("));
                 }
@@ -114,6 +113,7 @@ public class BuilderTable {
                 fieldInfo.setComment(comment);
                 fieldInfo.setAutoIncrement("auto_increment".equalsIgnoreCase(extra)?true:false);
                 fieldInfo.setSqlType(type);
+
                 fieldInfo.setPropertyName(propertyName);
                 fieldInfo.setJavaType(processJavaType(type));
                 if(ArrayUtils.contains(Constants.SQL_DATE_TIME_TYPES,type)){
@@ -230,4 +230,7 @@ public class BuilderTable {
         }
 
     }
+//    public static void main(String[] args){
+//        List<TableInfo> get=getTables();
+//    }
 }
