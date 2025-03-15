@@ -1,19 +1,15 @@
-package com.easyJava.entity.po;
+package com.easyJava.query;
 
-import java.io.Serializable;
 import java.util.Date;
-import com.fasterxml.jackson.annotation.JsonFormat;
-import org.springframework.format.annotation.DateTimeFormat;
 import com.easyJava.enums.DateTimePatternEnum;
 import com.easyJava.utils.DateUtils;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 
 /**
   * @Description:员工表
   * @Author:刘耿豪
   * @Date:2025/03/14
   */
-public class Emp implements Serializable{
+public class EmpQuery{
 	/**
 	 * ID
 	 */
@@ -24,15 +20,21 @@ public class Emp implements Serializable{
 	 */
 	 private String username;
 
+	 private String usernameFuzzy;
+
 	/**
 	 * 密码
 	 */
 	 private String password;
 
+	 private String passwordFuzzy;
+
 	/**
 	 * 姓名
 	 */
 	 private String name;
+
+	 private String nameFuzzy;
 
 	/**
 	 * 性别, 说明: 1 男, 2 女
@@ -44,6 +46,8 @@ public class Emp implements Serializable{
 	 */
 	 private String image;
 
+	 private String imageFuzzy;
+
 	/**
 	 * 职位, 说明: 1 班主任,2 讲师, 3 学工主管, 4 教研主管, 5 咨询师
 	 */
@@ -52,9 +56,11 @@ public class Emp implements Serializable{
 	/**
 	 * 入职时间
 	 */
-	 @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss",timezone="GMT+8")
-	 @DateTimeFormat(pattern="yyyy-MM-dd HH:mm:ss")
 	 private Date entrydate;
+
+	 private String entrydateStart;
+
+	 private String entrydateEnd;
 
 	/**
 	 * 部门ID
@@ -64,18 +70,20 @@ public class Emp implements Serializable{
 	/**
 	 * 创建时间
 	 */
-	 @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss",timezone="GMT+8")
-	 @DateTimeFormat(pattern="yyyy-MM-dd HH:mm:ss")
-	 @JsonIgnore
 	 private Date createTime;
+
+	 private String createTimeStart;
+
+	 private String createTimeEnd;
 
 	/**
 	 * 修改时间
 	 */
-	 @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss",timezone="GMT+8")
-	 @DateTimeFormat(pattern="yyyy-MM-dd HH:mm:ss")
-	 @JsonIgnore
 	 private Date updateTime;
+
+	 private String updateTimeStart;
+
+	 private String updateTimeEnd;
 
 	public void setId(Integer id){
 		this.id=id;
@@ -143,8 +151,29 @@ public class Emp implements Serializable{
 	public Date getUpdateTime(){
 		return this.updateTime;
 	}
-	@Override
-	public String toString(){
-		return "ID:"+(id==null?"空":id)+","+"用户名:"+(username==null?"空":username)+","+"密码:"+(password==null?"空":password)+","+"姓名:"+(name==null?"空":name)+","+"性别, 说明: 1 男, 2 女:"+(gender==null?"空":gender)+","+"图像:"+(image==null?"空":image)+","+"职位, 说明: 1 班主任,2 讲师, 3 学工主管, 4 教研主管, 5 咨询师:"+(job==null?"空":job)+","+"入职时间:"+(entrydate==null?"空":DateUtils.format(entrydate, DateTimePatternEnum.YYYY_MM_DD.getPattern()))+","+"部门ID:"+(deptId==null?"空":deptId)+","+"创建时间:"+(createTime==null?"空":DateUtils.format(createTime, DateTimePatternEnum.YYYY_MM_DD_HH_MM_SS.getPattern()))+","+"修改时间:"+(updateTime==null?"空":DateUtils.format(updateTime, DateTimePatternEnum.YYYY_MM_DD_HH_MM_SS.getPattern()));
+	public void setUsernameFuzzy(String usernameFuzzy){
+		this.usernameFuzzy=usernameFuzzy;
 	}
+	public String getUsernameFuzzy(){
+		return this.usernameFuzzy;
+	}
+	public void setPasswordFuzzy(String passwordFuzzy){
+		this.passwordFuzzy=passwordFuzzy;
+	}
+	public String getPasswordFuzzy(){
+		return this.passwordFuzzy;
+	}
+	public void setNameFuzzy(String nameFuzzy){
+		this.nameFuzzy=nameFuzzy;
+	}
+	public String getNameFuzzy(){
+		return this.nameFuzzy;
+	}
+	public void setImageFuzzy(String imageFuzzy){
+		this.imageFuzzy=imageFuzzy;
+	}
+	public String getImageFuzzy(){
+		return this.imageFuzzy;
+	}
+
 }

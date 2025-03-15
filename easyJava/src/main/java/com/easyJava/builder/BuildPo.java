@@ -114,13 +114,21 @@ public class BuildPo {
             for(int i=0;i<l;i++){
 
                 FieldInfo fieldInfo=tableInfo.getFieldList().get(i);
-                if(ArrayUtils.contains(Constants.SQL_DATE_TIME_TYPES,fieldInfo.getSqlType())||ArrayUtils.contains(Constants.SQL_DATE_TYPES,fieldInfo.getSqlType())){
+                if(ArrayUtils.contains(Constants.SQL_DATE_TIME_TYPES,fieldInfo.getSqlType())){
                     bufferedWriter.write("\""+fieldInfo.getComment()+":\"+" +
                             "("+fieldInfo.getPropertyName()+"==null?\"空\":"+
                             "DateUtils.format("+fieldInfo.getPropertyName()+","+" DateTimePatternEnum.YYYY_MM_DD_HH_MM_SS.getPattern())"
                             +")");
 
-                }else{
+                }
+                else if(ArrayUtils.contains(Constants.SQL_DATE_TYPES,fieldInfo.getSqlType())){
+                    bufferedWriter.write("\""+fieldInfo.getComment()+":\"+" +
+                            "("+fieldInfo.getPropertyName()+"==null?\"空\":"+
+                            "DateUtils.format("+fieldInfo.getPropertyName()+","+" DateTimePatternEnum.YYYY_MM_DD.getPattern())"
+                            +")");
+
+                }
+                else{
                     bufferedWriter.write("\""+fieldInfo.getComment()+":\"+" +
                             "("+fieldInfo.getPropertyName()+"==null?\"空\":"+fieldInfo.getPropertyName()+")");
 

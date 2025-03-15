@@ -3,6 +3,7 @@ package com.easyJava;
 import com.easyJava.bean.TableInfo;
 import com.easyJava.builder.BuildBase;
 import com.easyJava.builder.BuildPo;
+import com.easyJava.builder.BuildQuery;
 import com.easyJava.builder.BuilderTable;
 
 import java.io.IOException;
@@ -17,6 +18,7 @@ public class RunApplication {
         BuildBase.execute();
         for(TableInfo tableInfo:tableInfoList){
             BuildPo.execute(tableInfo);
+            BuildQuery.execute(tableInfo);
         }
     }
 }
