@@ -7,7 +7,7 @@ import com.easyJava.utils.DateUtils;
 /**
   * @Description:部门表
   * @Author:刘耿豪
-  * @Date:2025/03/14
+  * @Date:2025/03/15
   */
 public class DeptQuery{
 	/**
@@ -69,6 +69,30 @@ public class DeptQuery{
 	}
 	public String getNameFuzzy(){
 		return this.nameFuzzy;
+	}
+	public void setCreateTimeStart(String createTimeStart){
+		this.createTimeStart=createTimeStart;
+	}
+	public String getCreateTimeStart(){
+		return this.createTimeStart;
+	}
+	public void setCreateTimeEnd(String createTimeEnd){
+		this.createTimeEnd=createTimeEnd;
+	}
+	public String getCreateTimeEnd(){
+		return this.createTimeEnd;
+	}
+	public void setUpdateTimeStart(String updateTimeStart){
+		this.updateTimeStart=updateTimeStart;
+	}
+	public String getUpdateTimeStart(){
+		return this.updateTimeStart;
+	}
+	public void setUpdateTimeEnd(String updateTimeEnd){
+		this.updateTimeEnd=updateTimeEnd;
+	}
+	public String getUpdateTimeEnd(){
+		return this.updateTimeEnd;
 	}
 
 }

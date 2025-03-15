@@ -12,6 +12,7 @@ public class Constants {
     public static String SUFFIX_BEAN_QUERY_FUZZY;
     public static String SUFFIX_BEAN_QUERY_TIME_START;
     public static String SUFFIX_BEAN_QUERY_TIME_END;
+    public static String SUFFIX_MAPPER;
 
     //需要忽略的属性
     public static String IGNORE_BEAN_2JSON_FIELD;
@@ -33,6 +34,7 @@ public class Constants {
     public static String PATH_UTILS;
     public static String PATH_ENUMS;
     public static String PATH_QUERY;
+    public static String PATH_MAPPER;
 
     //包
     public static String PACKAGE_BASE;
@@ -40,6 +42,7 @@ public class Constants {
     public static String PACKAGE_UTILS;
     public static String PACKAGE_ENUMS;
     public static String PACKAGE_QUERY;
+    public static String PACKAGE_MAPPER;
     //注释——作者
     public static String AUTHOR_COMMENT;
 
@@ -52,6 +55,7 @@ public class Constants {
         SUFFIX_BEAN_QUERY_FUZZY=PropertiesUtils.getString("suffix.bean.query.fuzzy");
         SUFFIX_BEAN_QUERY_TIME_START=PropertiesUtils.getString("suffix.bean.query.time.start");
         SUFFIX_BEAN_QUERY_TIME_END=PropertiesUtils.getString("suffix.bean.query.time.end");
+        SUFFIX_MAPPER=PropertiesUtils.getString("suffix.mapper");
 
         IGNORE_BEAN_2JSON_CLASS=PropertiesUtils.getString("ignore.bean.2json.class");
         IGNORE_BEAN_2JSON_EXPRESSION=PropertiesUtils.getString("ignore.bean.2json.expression");
@@ -75,13 +79,13 @@ public class Constants {
         PACKAGE_UTILS=PACKAGE_BASE+"."+PropertiesUtils.getString("package.utils");
         PACKAGE_ENUMS=PACKAGE_BASE+"."+PropertiesUtils.getString("package.enums");
         PACKAGE_QUERY=PACKAGE_BASE+"."+PropertiesUtils.getString("package.query");
-
+        PACKAGE_MAPPER=PACKAGE_BASE+"."+PropertiesUtils.getString("package.mapper");
 
         PATH_PO=PATH_BASE+"/"+PACKAGE_PO.replace(".","/");
         PATH_UTILS=PATH_BASE+"/"+PACKAGE_UTILS.replace(".","/");
         PATH_ENUMS=PATH_BASE+"/"+PACKAGE_ENUMS.replace(".","/");
         PATH_QUERY=PATH_BASE+"/"+PACKAGE_QUERY.replace(".","/");
-
+        PATH_MAPPER=PATH_BASE+"/"+PACKAGE_MAPPER.replace(".","/");
 
 
     }

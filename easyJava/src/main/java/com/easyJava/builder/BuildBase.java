@@ -15,8 +15,13 @@ public class BuildBase {
         headInfoList.add("package "+Constants.PACKAGE_ENUMS+";");
         build(headInfoList,"DateTimePatternEnum",Constants.PATH_ENUMS);
         headInfoList.clear();
+
         headInfoList.add("package "+Constants.PACKAGE_UTILS+";");
         build(headInfoList,"DateUtils", Constants.PATH_UTILS);
+        headInfoList.clear();
+
+        headInfoList.add("package "+Constants.PACKAGE_MAPPER+";");
+        build(headInfoList,"BaseMapper", Constants.PATH_MAPPER);
 
     }
     public static void build(List<String> headInfoList,String fileName, String outPutPath) throws IOException {

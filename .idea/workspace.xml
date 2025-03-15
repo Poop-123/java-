@@ -4,19 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2675108-2419-48b0-b247-6db8684e412b" name="Changes" comment="代码生成工具--po对象生成,细节优化，完结">
+    <list default="true" id="e2675108-2419-48b0-b247-6db8684e412b" name="Changes" comment="代码生成工具--生成query对象">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easyJava-demo/src/main/java/com/easyJava/entity/po/Dept.java" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava-demo/src/main/java/com/easyJava/entity/po/Dept.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/easyJava-demo/src/main/java/com/easyJava/entity/po/Emp.java" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava-demo/src/main/java/com/easyJava/entity/po/Emp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easyJava-demo/src/main/java/com/easyJava/query/DeptQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava-demo/src/main/java/com/easyJava/query/DeptQuery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easyJava-demo/src/main/java/com/easyJava/query/EmpQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava-demo/src/main/java/com/easyJava/query/EmpQuery.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/easyJava/src/main/java/com/easyJava/RunApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/src/main/java/com/easyJava/RunApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/easyJava/src/main/java/com/easyJava/bean/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/src/main/java/com/easyJava/bean/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/easyJava/src/main/java/com/easyJava/builder/BuildPo.java" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/src/main/java/com/easyJava/builder/BuildPo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/easyJava/src/main/java/com/easyJava/builder/BuilderTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/src/main/java/com/easyJava/builder/BuilderTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easyJava/src/main/java/com/easyJava/builder/BuildBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/src/main/java/com/easyJava/builder/BuildBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easyJava/src/main/java/com/easyJava/builder/BuildQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/src/main/java/com/easyJava/builder/BuildQuery.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/easyJava/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/easyJava/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/easyJava/target/classes/com/easyJava/RunApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/target/classes/com/easyJava/RunApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/easyJava/target/classes/com/easyJava/bean/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/target/classes/com/easyJava/bean/Constants.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/easyJava/target/classes/com/easyJava/builder/BuildPo.class" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/target/classes/com/easyJava/builder/BuildPo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/easyJava/target/classes/com/easyJava/builder/BuilderTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/target/classes/com/easyJava/builder/BuilderTable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easyJava/target/classes/com/easyJava/builder/BuildQuery.class" beforeDir="false" afterPath="$PROJECT_DIR$/easyJava/target/classes/com/easyJava/builder/BuildQuery.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +28,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -227,6 +230,7 @@
       <workItem from="1741880651666" duration="56000" />
       <workItem from="1741916728468" duration="17732000" />
       <workItem from="1741951370644" duration="11552000" />
+      <workItem from="1742000463360" duration="7095000" />
     </task>
     <task id="LOCAL-00001" summary="代码生成工具--数据库表的获取">
       <option name="closed" value="true" />
@@ -260,7 +264,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741959066452</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="代码生成工具--生成query对象">
+      <option name="closed" value="true" />
+      <created>1742000701099</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1742000701099</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,6 +283,7 @@
     <MESSAGE value="代码生成工具--表索引的获取  取表操作完结" />
     <MESSAGE value="代码生成工具--po对象生成" />
     <MESSAGE value="代码生成工具--po对象生成,细节优化，完结" />
-    <option name="LAST_COMMIT_MESSAGE" value="代码生成工具--po对象生成,细节优化，完结" />
+    <MESSAGE value="代码生成工具--生成query对象" />
+    <option name="LAST_COMMIT_MESSAGE" value="代码生成工具--生成query对象" />
   </component>
 </project>

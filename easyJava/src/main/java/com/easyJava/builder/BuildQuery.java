@@ -80,12 +80,12 @@ public class BuildQuery {
                     bufferedWriter.newLine();
                     bufferedWriter.newLine();
                     FieldInfo startField=new FieldInfo();
-                    startField.setJavaType(fieldInfo.getJavaType());
-                    startField.setPropertyName(fieldInfo.getPropertyName()+Constants.SUFFIX_BEAN_QUERY_FUZZY);
+                    startField.setJavaType("String");
+                    startField.setPropertyName(fieldInfo.getPropertyName()+Constants.SUFFIX_BEAN_QUERY_TIME_START);
                     extendList.add(startField);
                     FieldInfo endField=new FieldInfo();
-                    endField.setJavaType(fieldInfo.getJavaType());
-                    endField.setPropertyName(fieldInfo.getPropertyName()+Constants.SUFFIX_BEAN_QUERY_FUZZY);
+                    endField.setJavaType("String");
+                    endField.setPropertyName(fieldInfo.getPropertyName()+Constants.SUFFIX_BEAN_QUERY_TIME_END);
                     extendList.add(endField);
 
                 }

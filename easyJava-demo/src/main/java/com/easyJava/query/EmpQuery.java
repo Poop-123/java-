@@ -7,7 +7,7 @@ import com.easyJava.utils.DateUtils;
 /**
   * @Description:员工表
   * @Author:刘耿豪
-  * @Date:2025/03/14
+  * @Date:2025/03/15
   */
 public class EmpQuery{
 	/**
@@ -174,6 +174,42 @@ public class EmpQuery{
 	}
 	public String getImageFuzzy(){
 		return this.imageFuzzy;
+	}
+	public void setEntrydateStart(String entrydateStart){
+		this.entrydateStart=entrydateStart;
+	}
+	public String getEntrydateStart(){
+		return this.entrydateStart;
+	}
+	public void setEntrydateEnd(String entrydateEnd){
+		this.entrydateEnd=entrydateEnd;
+	}
+	public String getEntrydateEnd(){
+		return this.entrydateEnd;
+	}
+	public void setCreateTimeStart(String createTimeStart){
+		this.createTimeStart=createTimeStart;
+	}
+	public String getCreateTimeStart(){
+		return this.createTimeStart;
+	}
+	public void setCreateTimeEnd(String createTimeEnd){
+		this.createTimeEnd=createTimeEnd;
+	}
+	public String getCreateTimeEnd(){
+		return this.createTimeEnd;
+	}
+	public void setUpdateTimeStart(String updateTimeStart){
+		this.updateTimeStart=updateTimeStart;
+	}
+	public String getUpdateTimeStart(){
+		return this.updateTimeStart;
+	}
+	public void setUpdateTimeEnd(String updateTimeEnd){
+		this.updateTimeEnd=updateTimeEnd;
+	}
+	public String getUpdateTimeEnd(){
+		return this.updateTimeEnd;
 	}
 
 }
